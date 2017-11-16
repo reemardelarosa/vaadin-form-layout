@@ -7,6 +7,7 @@ This program is available under Apache License Version 2.0, available at https:/
 <link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="../iron-resizable-behavior/iron-resizable-behavior.html">
 <link rel="import" href="../vaadin-themable-mixin/vaadin-themable-mixin.html">
+<link rel="import" href="../vaadin-development-mode-detector/vaadin-development-mode-detector.html">
 
 <dom-module id="vaadin-form-layout">
   <template>
@@ -438,6 +439,7 @@ This program is available under Apache License Version 2.0, available at https:/
        */
       window.Vaadin = window.Vaadin || {};
       Vaadin.FormLayoutElement = FormLayoutElement;
+      Vaadin.runIfDevelopmentMode('vaadin-usage-statistics');
     })();
   </script>
 </dom-module>
